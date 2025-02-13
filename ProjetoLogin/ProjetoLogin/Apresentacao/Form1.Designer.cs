@@ -98,6 +98,7 @@
             btnEntrar.TabIndex = 7;
             btnEntrar.Text = "Entrar";
             btnEntrar.UseVisualStyleBackColor = false;
+            btnEntrar.Click += btnEntrar_Click;
             // 
             // btnSair
             // 
