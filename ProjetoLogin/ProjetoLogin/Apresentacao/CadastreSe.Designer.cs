@@ -42,27 +42,27 @@
             label1.AutoSize = true;
             label1.Location = new Point(77, 33);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(37, 15);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Login";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(77, 106);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(39, 15);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "Senha";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(77, 196);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(96, 15);
             label3.TabIndex = 2;
-            label3.Text = "label3";
+            label3.Text = "Confirmar Senha";
             // 
             // textBox1
             // 
@@ -87,11 +87,11 @@
             // 
             // button1
             // 
-            button1.Location = new Point(151, 294);
+            button1.Location = new Point(151, 293);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(98, 39);
             button1.TabIndex = 6;
-            button1.Text = "button1";
+            button1.Text = "Cadastrar";
             button1.UseVisualStyleBackColor = true;
             // 
             // CadastreSe
