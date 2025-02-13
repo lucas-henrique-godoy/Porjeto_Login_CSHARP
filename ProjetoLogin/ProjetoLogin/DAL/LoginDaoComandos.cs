@@ -34,7 +34,7 @@ namespace ProjetoLogin.DAL
             catch (SqlException)
             {
 
-                this.mensagem = "Erro com Banco de Dados";
+                this.mensagem = "Erro com Banco de Dados!";
             }
             return tem;
         }
