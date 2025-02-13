@@ -62,6 +62,7 @@
             // 
             // txbLogin
             // 
+            txbLogin.BackColor = SystemColors.Control;
             txbLogin.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txbLogin.Location = new Point(382, 81);
             txbLogin.Name = "txbLogin";
@@ -70,6 +71,7 @@
             // 
             // txbSenha
             // 
+            txbSenha.BackColor = SystemColors.Control;
             txbSenha.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txbSenha.Location = new Point(382, 127);
             txbSenha.Name = "txbSenha";
@@ -89,6 +91,7 @@
             // 
             // btnEntrar
             // 
+            btnEntrar.BackColor = SystemColors.Control;
             btnEntrar.Location = new Point(393, 181);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.Size = new Size(75, 23);
@@ -98,6 +101,7 @@
             // 
             // btnSair
             // 
+            btnSair.BackColor = SystemColors.Control;
             btnSair.Location = new Point(492, 181);
             btnSair.Name = "btnSair";
             btnSair.Size = new Size(75, 23);
@@ -107,6 +111,7 @@
             // 
             // btnCadastreSe
             // 
+            btnCadastreSe.BackColor = SystemColors.Control;
             btnCadastreSe.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCadastreSe.Location = new Point(443, 231);
             btnCadastreSe.Name = "btnCadastreSe";

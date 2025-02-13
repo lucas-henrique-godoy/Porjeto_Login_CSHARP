@@ -31,78 +31,90 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            button1 = new Button();
+            txbLogin = new TextBox();
+            txbSenha = new TextBox();
+            txbConfirmarSenha = new TextBox();
+            btnCadastrar = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Calisto MT", 12F);
             label1.Location = new Point(77, 33);
             label1.Name = "label1";
-            label1.Size = new Size(37, 15);
+            label1.Size = new Size(51, 19);
             label1.TabIndex = 0;
             label1.Text = "Login";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Calisto MT", 12F);
             label2.Location = new Point(77, 106);
             label2.Name = "label2";
-            label2.Size = new Size(39, 15);
+            label2.Size = new Size(51, 19);
             label2.TabIndex = 1;
             label2.Text = "Senha";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Calisto MT", 12F);
             label3.Location = new Point(77, 196);
             label3.Name = "label3";
-            label3.Size = new Size(96, 15);
+            label3.Size = new Size(129, 19);
             label3.TabIndex = 2;
             label3.Text = "Confirmar Senha";
             // 
-            // textBox1
+            // txbLogin
             // 
-            textBox1.Location = new Point(77, 63);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(265, 23);
-            textBox1.TabIndex = 3;
+            txbLogin.BackColor = SystemColors.Control;
+            txbLogin.Location = new Point(77, 63);
+            txbLogin.Name = "txbLogin";
+            txbLogin.Size = new Size(265, 23);
+            txbLogin.TabIndex = 3;
             // 
-            // textBox2
+            // txbSenha
             // 
-            textBox2.Location = new Point(75, 135);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(174, 23);
-            textBox2.TabIndex = 4;
+            txbSenha.BackColor = SystemColors.Control;
+            txbSenha.Font = new Font("Segoe UI", 10F);
+            txbSenha.Location = new Point(75, 135);
+            txbSenha.Name = "txbSenha";
+            txbSenha.PasswordChar = '*';
+            txbSenha.Size = new Size(174, 25);
+            txbSenha.TabIndex = 4;
             // 
-            // textBox3
+            // txbConfirmarSenha
             // 
-            textBox3.Location = new Point(76, 225);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(173, 23);
-            textBox3.TabIndex = 5;
+            txbConfirmarSenha.BackColor = SystemColors.Control;
+            txbConfirmarSenha.Font = new Font("Segoe UI", 10F);
+            txbConfirmarSenha.Location = new Point(76, 225);
+            txbConfirmarSenha.Name = "txbConfirmarSenha";
+            txbConfirmarSenha.PasswordChar = '*';
+            txbConfirmarSenha.Size = new Size(173, 25);
+            txbConfirmarSenha.TabIndex = 5;
             // 
-            // button1
+            // btnCadastrar
             // 
-            button1.Location = new Point(151, 293);
-            button1.Name = "button1";
-            button1.Size = new Size(98, 39);
-            button1.TabIndex = 6;
-            button1.Text = "Cadastrar";
-            button1.UseVisualStyleBackColor = true;
+            btnCadastrar.BackColor = SystemColors.Control;
+            btnCadastrar.Location = new Point(151, 293);
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.Size = new Size(98, 39);
+            btnCadastrar.TabIndex = 6;
+            btnCadastrar.Text = "Cadastrar";
+            btnCadastrar.UseVisualStyleBackColor = false;
             // 
             // CadastreSe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(399, 361);
-            Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnCadastrar);
+            Controls.Add(txbConfirmarSenha);
+            Controls.Add(txbSenha);
+            Controls.Add(txbLogin);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -118,9 +130,9 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private Button button1;
+        private TextBox txbLogin;
+        private TextBox txbSenha;
+        private TextBox txbConfirmarSenha;
+        private Button btnCadastrar;
     }
 }
