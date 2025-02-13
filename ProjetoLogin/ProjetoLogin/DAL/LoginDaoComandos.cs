@@ -18,7 +18,7 @@ namespace ProjetoLogin.DAL
         public Boolean verificarLogin(String login, String senha)
         {
             //Procurar no banco esse login e senha
-            cmd.CommandText = "select * from nomeDaTabela where email = @login and senha = @senha";
+            cmd.CommandText = "select * from logins where email = @login and senha = @senha";
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
 
