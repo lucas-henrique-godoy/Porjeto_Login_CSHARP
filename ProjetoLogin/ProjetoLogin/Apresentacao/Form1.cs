@@ -14,5 +14,10 @@ namespace ProjetoLogin
             CadastreSe cadastrese = new CadastreSe();
             cadastrese.Show();
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
