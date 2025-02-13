@@ -1,3 +1,5 @@
+using ProjetoLogin.Apresentacao;
+
 namespace ProjetoLogin
 {
     public partial class Form1 : Form
@@ -5,6 +7,12 @@ namespace ProjetoLogin
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnCadastreSe_Click(object sender, EventArgs e)
+        {
+            CadastreSe cadastrese = new CadastreSe();
+            cadastrese.Show();
         }
     }
 }

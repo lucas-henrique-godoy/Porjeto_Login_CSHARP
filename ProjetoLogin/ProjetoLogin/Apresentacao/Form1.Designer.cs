@@ -119,6 +119,7 @@
             btnCadastreSe.TabIndex = 9;
             btnCadastreSe.Text = "CADASTRE-SE";
             btnCadastreSe.UseVisualStyleBackColor = false;
+            btnCadastreSe.Click += btnCadastreSe_Click;
             // 
             // Form1
             // 
