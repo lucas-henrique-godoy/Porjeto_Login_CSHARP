@@ -10,7 +10,7 @@ namespace ProjetoLogin.DAL
     class LoginDaoComandos
     {
         public Boolean tem = false;
-        public String mensagem = "";
+        public String mensagem = "";//tudo ok
         SqlCommand cmd = new SqlCommand();
         Conexao con = new Conexao();
         SqlDataReader dr;
@@ -26,7 +26,7 @@ namespace ProjetoLogin.DAL
             {
                 cmd.Connection = con.Conectar();
                 dr = cmd.ExecuteReader();
-                if (dr.HasRows)
+                if (dr.HasRows)// Se foi encontrado
                 {
                     tem = true;
                 }
