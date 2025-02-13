@@ -13,7 +13,7 @@ namespace ProjetoLogin.DAL
 
         public Conexao()
         {
-            con.ConnectionString = @"Data Source=FJDNOT2-TI2\SQLEXPRESS;Initial Catalog=ProjetoLogin;Integrated Security=True;Trust Server Certificate=True";
+            con.ConnectionString = @"Data Source=FJDNOT2-TI2\SQLEXPRESS;Initial Catalog=ProjetoLogin;Integrated Security=True;";
         }
 
         public SqlConnection Conectar()

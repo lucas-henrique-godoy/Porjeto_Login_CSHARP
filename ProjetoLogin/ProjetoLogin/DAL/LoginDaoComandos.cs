@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Logging;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -42,6 +43,10 @@ namespace ProjetoLogin.DAL
         public String Cadastrar(String email, String senha, String confSenha)
         {
             //comandos para inserir
+            cmd.CommandText = "insert into logins values (@email, @senha, @confSenha);";
+            cmd.Parameters.AddWithValue("@email", email);
+            cmd.Parameters.AddWithValue("@senha", senha);
+            cmd.Parameters.AddWithValue("@confSenha", confSenha);
             return mensagem;
         }
     }

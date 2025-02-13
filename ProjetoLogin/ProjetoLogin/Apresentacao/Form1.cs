@@ -25,14 +25,24 @@ namespace ProjetoLogin
         {
             Controle controle = new Controle();
             controle.Acessar(txbLogin.Text, txbSenha.Text);
-            if (controle.tem)
+            if (controle.mensagem.Equals(""))
             {
-                MessageBox.Show("Logado com sucesso", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (controle.tem)
+                {
+                    MessageBox.Show("Logado com sucesso", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    BemVindo bemVindo = new BemVindo();
+                    bemVindo.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Login não encontrado, verifique login e senha", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Login não encontrado, verifique login e senha", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(controle.mensagem);
             }
+            
         }
     }
 }
