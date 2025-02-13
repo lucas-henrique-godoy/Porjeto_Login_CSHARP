@@ -137,7 +137,7 @@
             Controls.Add(txbLogin);
             Controls.Add(lblSenha);
             Controls.Add(lblLogin);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

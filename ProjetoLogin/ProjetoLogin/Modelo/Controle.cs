@@ -26,7 +26,11 @@ namespace ProjetoLogin.Modelo
         public String Cadastrar(String email, String senha, String confSenha)
         {
             LoginDaoComandos loginDao = new LoginDaoComandos();
-            loginDao.Cadastrar(email, senha, confSenha);
+            this.mensagem = loginDao.Cadastrar(email, senha, confSenha);
+            if (loginDao.tem)//a mensagem que vai vir é de sucesso
+            {
+                this.tem = true;
+            }
             return mensagem;
         }
     }
